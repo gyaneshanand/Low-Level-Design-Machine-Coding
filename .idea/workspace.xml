@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="48475af1-2234-4986-bcd0-66de2c16409c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/constant/BorrowingStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/constant/VacancyStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/exception/RackException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/model/AdminUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/model/BookCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/model/Borrowing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/model/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/model/MemberUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/model/Rack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/repository/BookCopyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/repository/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/repository/BorrowingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/repository/LibraryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/repository/MemberUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/service/BookCopyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/service/InventoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/service/LibraryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/service/RackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/util/Validator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2YtlD7MbRu8TUmerncdvZTHWCXK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "copyright"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LibraryManagementService.Driver" />
+      <module name="LLD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LibraryManagementService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Driver" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48475af1-2234-4986-bcd0-66de2c16409c" name="Changes" comment="" />
+      <created>1701352636258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701352636258</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LibraryManagementService/Driver.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LibraryManagementService/Driver.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
