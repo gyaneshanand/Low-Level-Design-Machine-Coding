@@ -1,14 +1,12 @@
 package TikTakToe.util;
 
 import TikTakToe.constant.PieceType;
-import TikTakToe.model.Board;
-import TikTakToe.model.Piece;
 
 import java.util.List;
 
-public class ResultValidationStrategy {
+public class DefaultResultValidationStrategy {
 
-    public ResultValidationStrategy() {
+    public DefaultResultValidationStrategy() {
     }
 
     public boolean validateResult(List<List<PieceType>> board, PieceType pieceType){
@@ -52,13 +50,14 @@ public class ResultValidationStrategy {
     private boolean validateDiagonal(List<List<PieceType>> board, PieceType pieceType){
         int boardSize = board.size()-1;
 
-        // Check left Diagonal
+        // Check Diagonal
         boolean isLeftDiagonalValid = true;
         for (int i = 0; i <= boardSize; i++) {
             if(board.get(i).get(i)==null || !(board.get(i).get(i).compareTo(pieceType)==0)){
                 isLeftDiagonalValid = false;
             }
         }
+        // Check anti Diagonal
         boolean isRightDiagonalValid = true;
         for (int i = 0; i <= boardSize; i++) {
             if(board.get(i).get(boardSize-i)==null || !(board.get(i).get(boardSize-i).compareTo(pieceType)==0)){

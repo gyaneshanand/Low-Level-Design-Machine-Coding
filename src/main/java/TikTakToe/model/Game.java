@@ -1,6 +1,6 @@
 package TikTakToe.model;
 
-import TikTakToe.util.ResultValidationStrategy;
+import TikTakToe.util.DefaultResultValidationStrategy;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -13,10 +13,10 @@ public class Game {
     List<Player> playerList;
     List<Piece> pieceList;
     Queue<Player> playerQueue;
-    ResultValidationStrategy resultValidationStrategy;
+    DefaultResultValidationStrategy resultValidationStrategy;
     String gameId;
 
-    public Game(Board board, ResultValidationStrategy resultValidationStrategy) {
+    public Game(Board board, DefaultResultValidationStrategy resultValidationStrategy) {
         this.board = board;
         this.resultValidationStrategy = resultValidationStrategy;
         playerQueue=new LinkedList<>();
@@ -36,7 +36,7 @@ public class Game {
         return pieceList;
     }
 
-    public ResultValidationStrategy getResultValidationStrategy() {
+    public DefaultResultValidationStrategy getResultValidationStrategy() {
         return resultValidationStrategy;
     }
 

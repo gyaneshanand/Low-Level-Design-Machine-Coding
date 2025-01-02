@@ -1,10 +1,7 @@
 package TikTakToe;
 
-import TikTakToe.model.Board;
-import TikTakToe.model.Game;
-import TikTakToe.service.BoardPrinter;
 import TikTakToe.service.GameService;
-import TikTakToe.util.ResultValidationStrategy;
+import TikTakToe.util.DefaultResultValidationStrategy;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +14,7 @@ public class Driver {
         InputStreamReader ir = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(ir);
 
-        ResultValidationStrategy resultValidationStrategy = new ResultValidationStrategy();
+        DefaultResultValidationStrategy resultValidationStrategy = new DefaultResultValidationStrategy();
         GameService gameService = new GameService(3, resultValidationStrategy);
 
         gameService.addPlayer("X", "Gaurav");
@@ -32,7 +29,5 @@ public class Driver {
 
             input = br.readLine();
         }
-
-
     }
 }

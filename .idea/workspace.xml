@@ -4,61 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48475af1-2234-4986-bcd0-66de2c16409c" name="Changes" comment="LMS lld">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ABuildingBlock/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BookMyShow/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Calander/eventCalander/Event Calendar.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Calander/eventCalander/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/constant/OccupanyStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/constant/TicketStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/constant/VehicleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/exception/InvalidTicketException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/exception/NoSlotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/model/Floor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/model/ParkingLot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/model/Slot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/model/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/model/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/repository/InMemoryCommonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/service/FloorwiseSearchServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/service/ParkingLotService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/service/ParkingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/service/SearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/service/TicketingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/service/VehicleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/util/AvalabilityProviderStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingLot/util/LowestCountAvalabilityProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SplitWise/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SplitWise/constant/SplitType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SplitWise/constant/TransactionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SplitWise/model/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SplitWise/model/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SplitWise/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SplitWise/model/UserLedger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SplitWise/repository/InMemoryCommonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SplitWise/service/SplitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SplitWise/service/TransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SplitWise/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/constant/PieceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/exception/InvalidMoveException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/model/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/model/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/model/Piece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/model/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/repository/InMemory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/service/BoardPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/service/GameService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/service/PlayerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/util/MoveValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/util/ResultValidationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/VehicleRentalSystem/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/VehicleRentalSystem/VehicleRentalSystem.md" afterDir="false" />
+    <list default="true" id="48475af1-2234-4986-bcd0-66de2c16409c" name="Changes" comment="Update gitignore">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ABuildingBlock/InMemoryDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/AppointmentBookingSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/constant/DoctorSpeciality.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/constant/SlotOccupancyStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Slot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/InMemorySlotRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/SlotRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/SlotService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/SlotServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/util/SlotRankingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/util/TimeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/util/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Ecommerce/MiniEcommerce/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Ecommerce/MiniEcommerce/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/model/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/model/ProductInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/repository/InventoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/service/InventoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ABuildingBlock/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ABuildingBlock/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibraryManagementService/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TikTakToe/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TikTakToe/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TikTakToe/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/service/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TikTakToe/util/MoveValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/util/MoveValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TikTakToe/util/ResultValidationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/util/DefaultResultValidationStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,14 +50,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="c3429e73-8f9a-4d2d-8253-e6f9339273e7" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,21 +71,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/gyanesh/Desktop/LLD/src/main/java/Calander/eventCalander",
-    "settings.editor.selected.configurable": "copyright"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gyanesh/Desktop/LLD/src/main/java/Calander/eventCalander&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/Calander/eventCalander" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ParkingLot.Driver">
+  <component name="RunManager" selected="Application.AppointmentBookingSystem">
+    <configuration name="ABuildingBlock.Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ABuildingBlock.Driver" />
+      <module name="LLD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ABuildingBlock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppointmentBookingSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DoctorAppointmentBooking.AppointmentBookingSystem" />
+      <module name="LLD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DoctorAppointmentBooking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LibraryManagementService.Driver" />
       <module name="LLD" />
@@ -142,9 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppointmentBookingSystem" />
+        <item itemvalue="Application.Driver" />
+        <item itemvalue="Application.ABuildingBlock.Driver" />
         <item itemvalue="Application.ParkingLot.Driver" />
         <item itemvalue="Application.TikTakToe.Driver" />
-        <item itemvalue="Application.Driver" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +177,28 @@
       <option name="project" value="LOCAL" />
       <updated>1701585058448</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Setup">
+      <created>1702120789717</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702120789717</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update gitignore">
+      <created>1702121293462</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702121293462</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update gitignore">
+      <created>1702121315438</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702121315438</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,7 +206,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -180,6 +220,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="LMS lld" />
-    <option name="LAST_COMMIT_MESSAGE" value="LMS lld" />
+    <MESSAGE value="Setup" />
+    <MESSAGE value="Update gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update gitignore" />
   </component>
 </project>

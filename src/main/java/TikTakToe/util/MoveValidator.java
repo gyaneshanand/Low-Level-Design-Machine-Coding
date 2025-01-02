@@ -10,9 +10,9 @@ public class MoveValidator {
         boolean isValidMove = validateRow(board, row) &&
                 validateCol(board, col) &&
                 checkIfEmpty(board, row, col);
-        if(!isValidMove)
+        if(!isValidMove){
             throw new InvalidMoveException("Invalid Move");
-
+        }
     }
 
     private static boolean validateRow(Board board, int row){
