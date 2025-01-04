@@ -13,4 +13,6 @@ public interface SlotService {
     public String markDocAvailability(String docName, String slotTimeList);
     public Slot getSlotByDoctorAndStartTime(Integer doctorId, LocalTime startTime);
 
+    public void showAvailByspeciality(String speciality);
+
 }

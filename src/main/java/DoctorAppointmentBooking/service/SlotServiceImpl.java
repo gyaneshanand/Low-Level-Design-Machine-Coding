@@ -1,9 +1,12 @@
 package DoctorAppointmentBooking.service;
 
+import DoctorAppointmentBooking.constant.DoctorSpeciality;
 import DoctorAppointmentBooking.model.Doctor;
 import DoctorAppointmentBooking.model.Slot;
 import DoctorAppointmentBooking.repository.InMemorySlotRepository;
 import DoctorAppointmentBooking.repository.SlotRepository;
+import DoctorAppointmentBooking.util.SlotRankingStrategy;
+import DoctorAppointmentBooking.util.StartTimeBasedRankingStrategy;
 import DoctorAppointmentBooking.util.Validator;
 
 import java.time.LocalTime;
@@ -13,10 +16,18 @@ public class SlotServiceImpl implements SlotService{
 
     SlotRepository slotRepository;
     UserService userService;
+    SlotRankingStrategy slotRankingStrategy;
 
     public SlotServiceImpl() {
         this.slotRepository = InMemorySlotRepository.getInstance();
         this.userService = new UserServiceImpl();
+        this.slotRankingStrategy = new StartTimeBasedRankingStrategy(); // Default Strategy
+    }
+
+    public SlotServiceImpl(SlotRankingStrategy slotRankingStrategy) {
+        this.slotRepository = InMemorySlotRepository.getInstance();
+        this.userService = new UserServiceImpl();
+        this.slotRankingStrategy = slotRankingStrategy;
     }
 
     @Override
@@ -73,5 +84,12 @@ public class SlotServiceImpl implements SlotService{
     // Get Slot for Doctor for given start time and doctor
     public Slot getSlotByDoctorAndStartTime(Integer doctorId, LocalTime startTime){
         return slotRepository.getSlotByDoctorAndStartTime(doctorId, startTime);
+    }
+
+    @Override
+    public void showAvailByspeciality(String speciality) {
+        List<Slot> slots = slotRepository.getSlotsByDoctorSpeciality(DoctorSpeciality.valueOf(speciality));
+        slotRankingStrategy.rankSlots(slots);
+        slots.forEach(slot -> System.out.println(slot.getDoctor().getName() + " | " + slot.getStartTime() + " | " + slot.getEndTime()));
     }
 }
