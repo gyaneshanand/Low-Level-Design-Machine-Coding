@@ -31,7 +31,7 @@ public class AppointmentServiceImpl implements AppointmentService{
         // Get the slot object for the given start time and doctor
         LocalTime startTime = LocalTime.parse(slotStartTime);
         Slot slot = slotService.getSlotByDoctorAndStartTime(doctor.getId(), startTime);
-        if(slot == null || slot.getSlotOccupancyStatus().equals(SlotOccupancyStatus.BOOKED)){
+        if(slot == null){
             System.out.println("Slot not available for the doctor at the given time");
             return null;
         }
@@ -47,18 +47,46 @@ public class AppointmentServiceImpl implements AppointmentService{
         // Get Random Appointment Id
         Integer appointmentId = (int) (Math.random() * 1000);
         Appointment appointment = new Appointment(appointmentId, slot, patient);
+        // If the slot is already booked, add the patient to the waitlist
+        if(slot.getSlotOccupancyStatus().equals(SlotOccupancyStatus.BOOKED)){
+            appointment.setWaitList(true);
+        }
+        slot.setSlotOccupancyStatus(SlotOccupancyStatus.BOOKED);
         appointmentRepository.addAppointment(appointment);
-        System.out.println("Booked. Booking id: " + appointmentId);
+        if(appointment.getWaitList()){
+            System.out.println("Added to the waitlist. Booking id: " + appointmentId);
+        }
+        else {
+            System.out.println("Booked. Booking id: " + appointmentId);
+        }
+
 
         // List All appointments
         System.out.println("** All Appointments List **");
-        appointmentRepository.getAllAppointments().forEach((k,v) -> System.out.println("Appointment Id: " + k + " | Patient: " + v.getPatient().getName() + " | Doctor: " + v.getSlot().getDoctor().getName() + " | Time: " + v.getSlot().getStartTime()));
+        appointmentRepository.getAllAppointments().forEach((k,v) -> System.out.println("Appointment Id: " + k + " | Patient: " + v.getPatient().getName() + " | Doctor: " + v.getSlot().getDoctor().getName() + " | Time: " + v.getSlot().getStartTime() + "-" + v.getSlot().getEndTime() + " | Waitlist: " + v.getWaitList()));
         System.out.println();
+
         return appointment;
     }
 
     @Override
     public Appointment cancelAppointment(Integer appointmentId) {
+        // Get the appointment object to be cancelled
+        Appointment appointmentToCancel = appointmentRepository.getAppointmentById(appointmentId);
+
+        // Check if there is any appointment for the doctor at the same time which is waitlisted
+        Appointment waitListedAppointment = appointmentRepository.getWaitListedAppointmentByDoctorAndStartTime(appointmentToCancel.getSlot().getDoctor().getId(), appointmentToCancel.getSlot().getStartTime());
+
+        // Remove the appointment to be cancelled
+        appointmentRepository.removeAppointmentById(appointmentId);
+        System.out.println("Booking Cancelled");
+
+        // If there is any waitlisted appointment, book it
+        if(waitListedAppointment != null){
+            waitListedAppointment.setWaitList(false);
+            waitListedAppointment.getSlot().setSlotOccupancyStatus(SlotOccupancyStatus.BOOKED);
+            System.out.println("Booking confirmed for Booking id: " + waitListedAppointment.getId());
+        }
         return null;
     }
 

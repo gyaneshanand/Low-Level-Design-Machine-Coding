@@ -15,15 +15,19 @@ public class AppointmentBookingSystem {
 
         Doctor d1 = userService.registerDoc("Curious", "Cardiologist");
         userService.registerPatient("PatientA");
+        userService.registerPatient("PatientB");
 
         System.out.println(slotService.markDocAvailability("Curious", "09:30-10:00, 12:30-13:00, 16:00-16:30"));
 
 
-        System.out.println(slotService.markDocAvailability("Curious", "19:30-22:00,"));
+        System.out.println(slotService.markDocAvailability("Curious", "09:30-10:00,"));
         for(Slot slot : slotService.getAllSlots()){
             System.out.println(slot.getDoctor().getName() + " | " + slot.getStartTime() + " | " + slot.getEndTime());
         }
 
-        appointmentService.bookAppointment("PatientA", "Curious", "09:30");
+        Appointment a1 = appointmentService.bookAppointment("PatientA", "Curious", "09:30");
+        Appointment a2 = appointmentService.bookAppointment("PatientB", "Curious", "09:30");
+
+        appointmentService.cancelAppointment(a1.getId());
     }
 }

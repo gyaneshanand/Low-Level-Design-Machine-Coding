@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48475af1-2234-4986-bcd0-66de2c16409c" name="Changes" comment="Added Flipmed - Doctor Appointment System">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/InMemoryAppointmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/AppointmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/AppointmentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/AppointmentBookingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/AppointmentBookingSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Slot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Slot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/InMemorySlotRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/InMemorySlotRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/SlotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/SlotService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/SlotServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/SlotServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/util/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/util/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/AppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/AppointmentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1735845469206</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Flipmed - Doctor Appointment System">
+      <created>1735981729868</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735981729868</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
