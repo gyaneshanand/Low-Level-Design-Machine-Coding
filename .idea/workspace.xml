@@ -4,43 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48475af1-2234-4986-bcd0-66de2c16409c" name="Changes" comment="Update gitignore">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ABuildingBlock/InMemoryDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/AppointmentBookingSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/constant/DoctorSpeciality.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/constant/SlotOccupancyStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Appointment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Doctor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Slot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/InMemorySlotRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/SlotRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/SlotService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/SlotServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/util/SlotRankingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/util/TimeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/util/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Ecommerce/MiniEcommerce/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Ecommerce/MiniEcommerce/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/model/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/model/ProductInventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/repository/InventoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFulfillmentService/service/InventoryService.java" afterDir="false" />
+    <list default="true" id="48475af1-2234-4986-bcd0-66de2c16409c" name="Changes" comment="Added Flipmed - Doctor Appointment System">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/InMemoryAppointmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/AppointmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/AppointmentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ABuildingBlock/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ABuildingBlock/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LibraryManagementService/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibraryManagementService/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TikTakToe/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TikTakToe/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TikTakToe/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/service/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TikTakToe/util/MoveValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/util/MoveValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TikTakToe/util/ResultValidationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TikTakToe/util/DefaultResultValidationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/AppointmentBookingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/AppointmentBookingSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Slot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/model/Slot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/InMemorySlotRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/InMemorySlotRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/SlotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/SlotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/SlotServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/SlotServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/util/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DoctorAppointmentBooking/util/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -198,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702121315438</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Flipmed - Doctor Appointment System">
+      <created>1735845469206</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735845469206</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +206,7 @@
     <MESSAGE value="LMS lld" />
     <MESSAGE value="Setup" />
     <MESSAGE value="Update gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update gitignore" />
+    <MESSAGE value="Added Flipmed - Doctor Appointment System" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Flipmed - Doctor Appointment System" />
   </component>
 </project>

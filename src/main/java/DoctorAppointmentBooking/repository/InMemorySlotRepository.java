@@ -34,19 +34,26 @@ public class InMemorySlotRepository implements SlotRepository{
 
     // Get the slot by the doctor
     public List<Slot> getSlotsByDoctor(Integer doctorId){
-        List<Slot> doctorSlots = slots.stream().filter(slot -> slot.getDoctor().getId() == doctorId).collect(Collectors.toList());
+        List<Slot> doctorSlots = slots.stream()
+                .filter(slot -> slot.getDoctor().getId() == doctorId)
+                .collect(Collectors.toList());
         return doctorSlots;
     }
 
     // Get the slots by doctor speciality
     public List<Slot> getSlotsByDoctorSpeciality(DoctorSpeciality doctorSpeciality){
-        List<Slot> doctorSlots = slots.stream().filter(slot -> slot.getDoctor().getDoctorSpeciality().equals(doctorSpeciality) ).collect(Collectors.toList());
+        List<Slot> doctorSlots = slots.stream()
+                .filter(slot -> slot.getDoctor().getDoctorSpeciality().equals(doctorSpeciality) )
+                .collect(Collectors.toList());
         return doctorSlots;
     }
 
     // Get Doctor Slot by Time
     public Slot getSlotByDoctorAndStartTime(Integer doctorId, LocalTime startTime){
-        Slot slot = slots.stream().filter(s -> s.getDoctor().getId() == doctorId && s.getStartTime().compareTo(startTime)==0).findFirst().orElse(null);
+        Slot slot = slots.stream()
+                .filter(s -> s.getDoctor().getId() == doctorId && s.getStartTime().compareTo(startTime)==0)
+                .findFirst()
+                .orElse(null);
         return slot;
     }
 }

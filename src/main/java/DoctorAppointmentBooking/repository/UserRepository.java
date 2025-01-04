@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class UserRepository {
 
-    private Map<String, User> users;
+    private Map<String, User> users; // Assumption :- Name will be unique
     private static UserRepository userRepository;
 
     private UserRepository(){
@@ -28,11 +28,13 @@ public class UserRepository {
     }
 
     public User getUserById(Integer id){
-        // We can do error handlings here
         return users.get(id);
     }
 
     public User getUserByName(String name){
-        return users.values().stream().filter(user -> user.getName().equals(name)).findFirst().orElse(null);
+        return users.values().stream()
+                .filter(user -> user.getName().equals(name))
+                .findFirst()
+                .orElse(null);
     }
 }

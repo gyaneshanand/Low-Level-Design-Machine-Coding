@@ -11,14 +11,12 @@ public class Slot {
     private LocalTime endTime;
     private SlotOccupancyStatus slotOccupancyStatus;
     private Doctor doctor;
-    private Appointment appointment;
 
     public Slot(LocalTime startTime, LocalTime endTime, Doctor doctor) {
         this.startTime = startTime;
         this.endTime = endTime;
         this.doctor = doctor;
         this.slotOccupancyStatus = SlotOccupancyStatus.VACANT;
-        this.appointment = null;
     }
 
     public LocalTime getStartTime() {
@@ -47,14 +45,6 @@ public class Slot {
 
     public Doctor getDoctor() {
         return doctor;
-    }
-
-    public Appointment getAppointment() {
-        return appointment;
-    }
-
-    public void setAppointment(Appointment appointment) {
-        this.appointment = appointment;
     }
 
     public DoctorSpeciality getDocSpecialtiy(){

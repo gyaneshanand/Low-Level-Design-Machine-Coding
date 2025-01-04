@@ -4,14 +4,12 @@ public class Appointment {
     private Integer id;
     private Slot slot;
     private Patient patient;
-    private Doctor doctor;
     private Boolean isWaitList;
 
-    public Appointment(Integer id, Slot slot, Patient patient, Doctor doctor) {
+    public Appointment(Integer id, Slot slot, Patient patient) {
         this.id = id;
         this.slot = slot;
         this.patient = patient;
-        this.doctor = doctor;
         this.isWaitList = false;
     }
 
@@ -33,14 +31,6 @@ public class Appointment {
 
     public void setPatient(Patient patient) {
         this.patient = patient;
-    }
-
-    public Doctor getDoctor() {
-        return doctor;
-    }
-
-    public void setDoctor(Doctor doctor) {
-        this.doctor = doctor;
     }
 
     public Boolean getWaitList() {

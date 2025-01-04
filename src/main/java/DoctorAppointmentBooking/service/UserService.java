@@ -2,7 +2,10 @@ package DoctorAppointmentBooking.service;
 
 import DoctorAppointmentBooking.model.Doctor;
 import DoctorAppointmentBooking.model.Patient;
+import DoctorAppointmentBooking.model.Slot;
 import DoctorAppointmentBooking.model.User;
+
+import java.time.LocalTime;
 
 public interface UserService {
 

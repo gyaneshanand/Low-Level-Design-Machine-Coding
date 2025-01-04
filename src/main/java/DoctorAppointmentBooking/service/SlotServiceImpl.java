@@ -14,33 +14,36 @@ public class SlotServiceImpl implements SlotService{
     SlotRepository slotRepository;
     UserService userService;
 
-    public SlotServiceImpl(SlotRepository slotRepository) {
+    public SlotServiceImpl() {
         this.slotRepository = InMemorySlotRepository.getInstance();
         this.userService = new UserServiceImpl();
     }
 
     @Override
     public String createSlot(String startTime, String endTime, Doctor doctor) {
-        // Convert the Time into LocalTime using time util :- format - "HH:mm" or "H:mm"
+        // Convert the Time into LocalTime :- format - "HH:mm" or "H:mm"
         LocalTime start = LocalTime.parse(startTime);
         LocalTime end = LocalTime.parse(endTime);
 
         // Validate if the doctor does not have the slot at the given startTime
         Slot slot = slotRepository.getSlotByDoctorAndStartTime(doctor.getId(), start);
         if(slot != null){
-            return "Slot already exists for the doctor at the given timeslot" + start + " - " + end;
+            return "Slot already exists for the doctor at the given timeslot - " + start + " - " + end;
         }
 
         // Run Other Validations eg - Slot should not be more than 30 mins
-        Validator.validateSlot(start, end);
+        if(!Validator.validateSlot(start, end)){
+            return "Invalid Slot for the given timeslot - " + start + " - " + end;
+        }
 
         // Create the slot
-        return null;
+        slotRepository.addSlot(new Slot(start, end, doctor));
+        return "Slot created successfully for Doctor : " + doctor.getName() + " | Time : "+ start + "-" + end;
     }
 
     @Override
     public List<Slot> getAllSlots() {
-        return null;
+        return slotRepository.getAllSlots();
     }
 
     public String markDocAvailability(String docName, String slotTimeList){
@@ -54,9 +57,9 @@ public class SlotServiceImpl implements SlotService{
         String[] slotTimes = slotTimeList.split(",");
         for(String slotTime: slotTimes){
             String[] times = slotTime.split("-");
-            String startTime = times[0];
-            String endTime = times[1];
-            createSlot(startTime, endTime, doctor);
+            String startTime = times[0].strip();
+            String endTime = times[1].strip();
+            System.out.println(createSlot(startTime, endTime, doctor));
         }
 
         return "Done Doc!";
@@ -65,5 +68,10 @@ public class SlotServiceImpl implements SlotService{
     // Get All the slots for a doctor
     private List<Slot> getAllSlotsForDoctor(Doctor doctor){
         return null;
+    }
+
+    // Get Slot for Doctor for given start time and doctor
+    public Slot getSlotByDoctorAndStartTime(Integer doctorId, LocalTime startTime){
+        return slotRepository.getSlotByDoctorAndStartTime(doctorId, startTime);
     }
 }
